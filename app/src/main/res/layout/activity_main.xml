@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_combustivel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/descricaoConsumoCombustivel1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_combustivel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/descricaoConsumoCombustivel2"
+            app:layout_constraintStart_toStartOf="@+id/ic_combustivel1"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout1" />
+
+        <TextView
+            android:id="@+id/tv_valor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/valorPorLitroCombustivel1"
+            app:layout_constraintStart_toStartOf="@+id/ic_combustivel2"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+        <TextView
+            android:id="@+id/tv_valor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/valorPorLitroCombustivel2"
+            app:layout_constraintStart_toStartOf="@+id/ic_rendimento1"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/bt_buscar1"
+            app:layout_constraintStart_toEndOf="@+id/ic_combustivel1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_combustivel1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_combustivel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rendimentoHint"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/bt_buscar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/Buscar"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout1" />
+
+        <Button
+            android:id="@+id/bt_buscar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/Buscar"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/bt_buscar2"
+            app:layout_constraintStart_toEndOf="@+id/ic_combustivel2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_combustivel2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_combustivel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rendimentoHint"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_rendimento1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_valor1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_custo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/precoHint"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_rendimento2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_valor2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_custo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/precoHint"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ic_combustivel1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:importantForAccessibility="no"
+            app:tint="@color/iconColor"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout1"
+            app:layout_constraintStart_toStartOf="@+id/tv_combustivel1"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout1"
+            app:srcCompat="@drawable/logofuel" />
+
+        <ImageView
+            android:id="@+id/ic_combustivel2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:importantForAccessibility="no"
+            app:tint="@color/iconColor"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2"
+            app:layout_constraintStart_toStartOf="@+id/tv_combustivel2"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout2"
+            app:srcCompat="@drawable/logofuel" />
+
+        <ImageView
+            android:id="@+id/ic_rendimento1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:importantForAccessibility="no"
+            app:tint="@color/iconColor"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout3"
+            app:layout_constraintStart_toStartOf="@+id/tv_valor1"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout3"
+            app:srcCompat="@drawable/logofuel2" />
+
+        <ImageView
+            android:id="@+id/ic_rendimento2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:importantForAccessibility="no"
+            app:tint="@color/iconColor"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout4"
+            app:layout_constraintStart_toStartOf="@+id/tv_valor2"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout4"
+            app:srcCompat="@drawable/logofuel2" />
+
+        <Button
+            android:id="@+id/bt_calcular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/calcular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

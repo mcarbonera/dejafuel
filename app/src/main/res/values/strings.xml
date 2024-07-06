@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DejaFuel</string>
+
+    <string name="descricaoConsumoCombustivel1">Consumo Combustível 1:</string>
+    <string name="descricaoConsumoCombustivel2">Consumo Combustível 2:</string>
+    <string name="valorPorLitroCombustivel1">Valor Por Litro Combustível 1:</string>
+    <string name="valorPorLitroCombustivel2">Valor Por Litro Combustível 2:</string>
+    <string name="Buscar">Buscar</string>
+    <string name="rendimentoHint">Rendimento</string>
+    <string name="precoHint">Custo</string>
+    <string name="calcular">Calcular</string>
+
+    <string name="toast_invalid_input">Alguns campos não foram preenchidos</string>
+    <string name="maior_rendimento">Maior rendimento: </string>
+    <string name="rendimento_igual">Os combustíveis possuem o mesmo rendimento</string>
+    <string name="dejafuel_app">DejaFuel App</string>
+</resources>
